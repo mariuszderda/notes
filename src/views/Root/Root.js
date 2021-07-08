@@ -1,5 +1,15 @@
 import React from 'react';
+// eslint-disable-next-line import/no-unresolved
+import Button from 'components/Button/Button';
+import GlobalStyle from 'theme/GlobalStyle';
 
-const Root = () => <h1>Hello Kasia</h1>;
+const Root = () => (
+  <div>
+    <GlobalStyle />
+    <h1>Hello</h1>
+    <Button>Close / Save</Button>
+    <Button secondary>Remove</Button>
+  </div>
+);
 
 export default Root;
