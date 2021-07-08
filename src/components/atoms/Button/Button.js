@@ -10,7 +10,7 @@ const Button = styled.button`
   font-family: Montserat, sans-serif;
   font-size: 16px;
   font-weight: ${({ theme }) => theme.bold};
-  background-color: ${({ theme }) => theme.primary};
+  background-color: ${({ theme, color }) => color || theme.primary};
   text-transform: uppercase;
 
   ${({ secondary }) =>
